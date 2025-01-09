@@ -3,49 +3,49 @@
         {
             "id": "1",
             "src": "./img/product-chain-1.png",
-            "title": "Front-End",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique"
+            "title": "Full-Stack Development",
+            "description": "Undertook Various Full-Stack Projects Using Languages & Frameworks Such as Python, Java, Django, JavaScript and React"
         },
         {
             "id": "2",
             "src": "./img/tag-1.png",
-            "title": "Back-End",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique"
+            "title": "DevOps",
+            "description": "Made Shell Using C Along With Bash & Shell Scripting in Linux Enviornment"
         },
         {
             "id": "3",
             "src": "./img/feather-pen-2.png",
-            "title": "UI & UX Design",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique"
+            "title": "Databases",
+            "description": "Worked and Parsed Through Databases using SQL Queries"
         },
         {
             "id": "4",
             "src": "./img/feather-pen-1.png",
-            "title": "Webflow Development",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique"
+            "title": "Web/UI Design",
+            "description": "Designed and Implemented UI's For Various Projetcs Along With Building Websites"
         }
     ],
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/placeholder-image.png",
-            "title": "Ahuse",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View in GitHub"
+            "src": "./img/football.jpg",
+            "title": "AI Football Score Predictor",
+            "description": "Live Fixtures Passed To ChatGPT & Cohere API's As Prompts To Predict Score",
+            "link": "https://github.com/adammckeown03/AI-Football-Score-Predictor"
         },
         {
             "id": "2",
-            "src": "./img/placeholder-image-1.png",
-            "title": "App Dashboard",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View in GitHub"
+            "src": "./img/shell.jpg",
+            "title": "MyShell",
+            "description": "Implemented Core Linux Shell Commands and Created Shell Enviornment Using C",
+            "link": "https://github.com/adammckeown03/MyShell"
         },
         {
             "id": "3",
-            "src": "./img/placeholder-image-2.png",
-            "title": "Easy Rehnt",
-            "description": "Lorem ipsum dolor sit, amet, consectetur adipiscing slit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View in GitHub"
+            "src": "./img/uni.JPG",
+            "title": "University Registration RESTAPI",
+            "description": "Created Registration System Using API To Sort Students by ID and View Student Details",
+            "link": "https://github.com/adammckeown03/UniversityRESTAPI"
         }
     ]
 }

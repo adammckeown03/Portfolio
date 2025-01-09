@@ -89,12 +89,22 @@ function Footer() {
                 </svg>
               </a>
             </li>
+            <li>
+              <a
+                href="/docs/CV.pdf"
+                className="navbar--content"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CV
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made by Adam</p>
+        <p className="footer--content">Made by Adam McKeown</p>
       </div>
     </footer>
   );

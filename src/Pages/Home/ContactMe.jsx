@@ -1,18 +1,46 @@
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+
 export default function ContactMe() {
+    const formRef = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_rvhc5li", // Replace with your EmailJS service ID
+                "template_p8cr8wu", // Replace with your EmailJS template ID
+                formRef.current,
+                "ApIExqW2k09Bf1Gbi" // Replace with your Public Key
+            )
+            .then(
+                (result) => {
+                    formRef.current.reset();
+                },
+                (error) => {
+                    alert("Failed to send the message. Please try again later.");
+                }
+            );
+    };
+
     return (
         <section id="Contact" className="contact--section">
             <div>
-                <p className="sub--title">Get in Touch</p>
                 <h2>Contact Me</h2>
             </div>
-            <form className="contact--form--container">
+            <form
+                ref={formRef}
+                className="contact--form--container"
+                onSubmit={sendEmail}
+            >
                 <div className="container">
                     <label htmlFor="first-name" className="contact--label">
                         <span className="text-md">First Name</span>
                         <input
                             type="text"
                             className="contact--input text-md"
-                            name="first-name"
+                            name="first_name"
                             id="first-name"
                             required
                         />
@@ -22,7 +50,7 @@ export default function ContactMe() {
                         <input
                             type="text"
                             className="contact--input text-md"
-                            name="last-name"
+                            name="last_name"
                             id="last-name"
                             required
                         />
@@ -40,44 +68,45 @@ export default function ContactMe() {
                     <label htmlFor="phone-number" className="contact--label">
                         <span className="text-md">Phone Number</span>
                         <input
-                            type="number"
+                            type="tel"
                             className="contact--input text-md"
-                            name="phone-number"
+                            name="phone_number"
                             id="phone-number"
+                            pattern="^\d{10,15}$"
                             required
                         />
                     </label>
                 </div>
                 <label htmlFor="choose-topic" className="contact--label">
-                        <span className="text-md">Choose a Topic</span>
-                        <select id="choose-topic" className="contact--input text-md">
-                            <option>Select One...</option>
-                            <option>Item 1</option>
-                            <option>Item 2</option>
-                            <option>Item 3</option>
-                        </select>
+                    <span className="text-md">Choose a Topic</span>
+                    <select
+                        id="choose-topic"
+                        name="topic"
+                        className="contact--input text-md"
+                        required
+                    >
+                        <option value="">Select One...</option>
+                        <option value="Query">Query</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </label>
                 <label htmlFor="message" className="contact--label">
-                        <span className="text-md">Message</span>
-                        <textarea
-                            className="contact--input text-md"
-                            id="message"
-                            rows="8"
-                            placeholder="Type your message..."
-                        />
-                    </label>
-                    <label htmlFor="checkbox" className="checkbox--label">
-                        <input
-                            type="checkbox"
-                            required
-                            name="checkbox"
-                            id="checkbox"
-                        />
-                        <span className="text-sm">I accept the terms</span>
-                    </label>
-                    <div>
-                        <button className="btn btn-primary contact--form--btn">Submit</button>
-                    </div>
+                    <span className="text-md">Message</span>
+                    <textarea
+                        className="contact--input text-md"
+                        name="message"
+                        id="message"
+                        rows="8"
+                        placeholder="Type your message..."
+                        required
+                    />
+                </label>
+                <div>
+                    <button type="submit" className="btn btn-primary contact--form--btn">
+                        Submit
+                    </button>
+                </div>
             </form>
         </section>
     );

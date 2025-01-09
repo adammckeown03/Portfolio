@@ -16,13 +16,13 @@
             "id": "3",
             "src": "./img/feather-pen-2.png",
             "title": "Databases",
-            "description": "Worked and Parsed Through Databases using SQL Queries"
+            "description": "Worked on and Parsed Through Databases Using SQL Queries"
         },
         {
             "id": "4",
             "src": "./img/feather-pen-1.png",
             "title": "Web/UI Design",
-            "description": "Designed and Implemented UI's For Various Projetcs Along With Building Websites"
+            "description": "Designed and Implemented UI's For Various Projetcs Along With Building and Designing Websites"
         }
     ],
     "portfolio": [
@@ -30,7 +30,7 @@
             "id": "1",
             "src": "./img/football.jpg",
             "title": "AI Football Score Predictor",
-            "description": "Live Fixtures Passed To ChatGPT & Cohere API's As Prompts To Predict Score",
+            "description": "Live Fixtures Fetched Using Database API and Passed To AI API's To Predict Score Using Live Odds",
             "link": "https://github.com/adammckeown03/AI-Football-Score-Predictor"
         },
         {
@@ -44,7 +44,7 @@
             "id": "3",
             "src": "./img/uni.JPG",
             "title": "University Registration RESTAPI",
-            "description": "Created Registration System Using API To Sort Students by ID and View Student Details",
+            "description": "Created Registration System Using RESTAPI To Sort Students by ID and View Course Details",
             "link": "https://github.com/adammckeown03/UniversityRESTAPI"
         }
     ]
